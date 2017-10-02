@@ -1,0 +1,57 @@
+/*structure*/
+body {
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+p {
+  font-family: serif;
+  font-size: 30px;
+  color: black;
+}
+
+.top-left, .top-right {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #c9c8bf;
+  border: 2px solid white;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+/*.top-left {
+  float: left;
+}*/
+
+.wrapper, .row {
+  display: table;
+}
+
+img {
+  width: 100%
+}
+
+/*small styling*/
+@media screen and (max-width:650px) {
+  .top-left, .top-right {
+    display: block;
+    margin: 0;
+    background-color: #c9c8bf;
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  .top-right {
+    float: right;
+  }
+
+  .top-left {
+    float: left;
+  }
+
+  img {
+    display: none;
+  }
+}
